@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* Główne ustawienia */
 body {
     font-family: Arial, sans-serif;
     background-image: url('images/jazyki.jpg'); 
@@ -21,8 +22,8 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 100;
     width: 100%;
     position: fixed;
@@ -37,7 +38,6 @@ header a {
 }
 
 header a h1 {
-    margin: 0;
     font-size: 24px;
     transition: color 0.3s;
 }
@@ -50,7 +50,7 @@ header a:hover h1 {
 nav {
     display: flex;
     gap: 20px;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 /* Linki nawigacyjne */
@@ -74,7 +74,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    padding-top: 100px; /* Aby nie zakrywało treści */
+    padding: 100px 20px 20px;
 }
 
 /* Tytuł */
@@ -98,7 +98,9 @@ nav a:hover {
 /* Przyciski */
 .buttons {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .button {
@@ -136,6 +138,7 @@ main {
 
 /* RESPONSYWNOŚĆ */
 @media (max-width: 768px) {
+    /* Nagłówek */
     header {
         flex-direction: column;
         text-align: center;
@@ -152,6 +155,21 @@ main {
         font-size: 20px;
     }
 
+    /* Hero sekcja */
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* Przyciski */
+    .buttons {
+        flex-direction: column;
+    }
+
+    /* Obrazy */
     main img {
         max-width: 100%;
     }

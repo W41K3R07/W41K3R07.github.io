@@ -50,6 +50,23 @@ header a:hover h1 {
     height: auto;
     margin-bottom: 10px;
 }
+ .buttons {
+            display: flex;
+            gap: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background: #0056b3;
+        }
 #cpp,#csh,#git{
     height: 56px;
     width: 56px;

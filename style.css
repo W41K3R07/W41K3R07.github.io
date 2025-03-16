@@ -21,7 +21,11 @@
             background-color: rgba(0, 0, 0, 0.7); 
             z-index: 100;
         }
-        header a {
+        header a h1 {
+            margin: 0;
+            font-size: 24px;
+            display: inline-block;
+            transition: color 0.3s;
             text-decoration: none;
             color: white;
         }

@@ -19,7 +19,6 @@ body {
 /* Nagłówek */
 header {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
@@ -31,7 +30,7 @@ header {
     left: 0;
 }
 
-/* Link do strony głównej */
+/* Link do strony głównej (po lewej) */
 header a {
     text-decoration: none;
     color: white;
@@ -46,14 +45,12 @@ header a:hover h1 {
     color: #00aaff;
 }
 
-/* Nawigacja */
+/* Nawigacja (po prawej) */
 nav {
     display: flex;
     gap: 20px;
-    margin-right: 20px;
 }
 
-/* Linki nawigacyjne */
 nav a {
     color: white;
     text-decoration: none;
@@ -140,19 +137,21 @@ main {
 @media (max-width: 768px) {
     /* Nagłówek */
     header {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+        justify-content: space-between;
         padding: 10px;
     }
 
-    nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+    header a h1 {
+        font-size: 20px;
     }
 
-    header h1 {
-        font-size: 20px;
+    /* Nawigacja w kolumnie po prawej */
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 5px;
     }
 
     /* Hero sekcja */

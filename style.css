@@ -37,10 +37,17 @@ header a {
 }
 
 header a h1 {
+    margin: 0;
     font-size: 24px;
+    display: inline-block;
     transition: color 0.3s;
+    text-decoration: none;
+    color: white;
 }
-
+header h1 {
+    argin: 0;
+    font-size: 24px;
+ }
 header a:hover h1 {
     color: #00aaff;
 }

@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styleK.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <a href="index.html"><h1>Portfolio</h1></a>
-        <h2>Projekty:</h2>
+        
         <nav>
             <a href="projekty.html">Projekty</a>
             <a href="certyfikaty.html">Certyfikaty</a>
@@ -17,10 +17,31 @@
         </nav>
     </header>
     
-    <div class="contact">
-        <h2>Work in Progress</h2>
-        
-    </div>
+    <main class="projects-h" >
+        <h2>Projekty:</h2>
+        <div class="projects">
+            <h2>GPIO 🔗 <a href="https://github.com/W41K3R07/GPIO" class="button">GitHub</a></h2>
+            <img src="Raspberry_Pi.png" alt="raspberry">
+            <p>Projekt ten jest reprezentacją w języku C++ fizycznych pinów raspberry pi i manewrowanie nimi za pomocą metod kod jest tylko teoretyczną reprezentacją piny przyjmują wartości takie jak: czy są konfigurowalne jaki jest ich stan (high czy low) czy jest zablokowany 
+                czy odblokowany Funkcja Show pokazuje prosty interface 
+                pokazujący numer pinu, nazwe i wartości jakie przyjmuje</p>
+        </div>
+        <div class="projects">
+            <h2>Bankomat 🔗 <a href="https://github.com/W41K3R07/Bankomat_cpp" class="button">GitHub</a></h2>
+            <img src="atm.png" alt="Bankomat">
+            <p>
+                Projekt ten jest reprezentacją 10 bankomatów w języku cpp do przeprowadzenia symualcji wypłat 
+                każdy z 10 bankomatów ma przydzieloną pseudolosową liczbę pieniędzy w zakresie od 500 do 2300
+                i psudolosową liczbę wypłat z zakresu od 1 do 5
+                przy wywołaniu metody zajmującej się przeprowadeniem wypłat zostaną wypłacone pieniądze z wszystkich 10 bankomatów w zależności od ilości transakcji
+                kwota wypłat jest losowana z przedziału od 50 do 500</p>
+        </div>
+        <div class="projects">
+            <h2>Snake 🔗 <a href="https://github.com/W41K3R07/Snake-The-game" class="button">GitHub</a></h2>
+            <img src="snake.png" alt="snake">
+            <p>Projekt ten to popularna gra snake w języku java script</p>
+        </div>
+    </main>
     <footer>Designed and coded by W41K3R</footer>
 </body>
 </html>
